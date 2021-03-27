@@ -1,0 +1,30 @@
+$la-font-path: get-resource-path('fonts', 'shared');
+
+$la-font-name-la: 'Line Awesome Solid';
+$la-font-name-lar: 'Line Awesome Free';
+$la-font-name-las: 'Line Awesome Solid';
+$la-font-name-lab: 'Line Awesome Brands';
+
+$la-css-prefix: la;
+
+@import '../etc/line-awesome';
+
+.#{$la-css-prefix} {
+  font-family: $la-font-name-las;
+  font-weight: 400;
+}
+
+@function la-content($la-var) {
+  @return unquote("\"\\#{ $la-var }\"");
+}
+
+// Ext JS Adjustments
+
+.x-btn-icon-el-default-toolbar-small {
+  &.la,
+  &.las,
+  &.lab,
+  &.lar {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "font-line-awesome",
+  "namespace": "FontLineAwesome",
+  "format": "1",
+  "version": "2.0.0",
+  "compatVersion": "1.0.0",
+  "creator": "enovision",
+  "summary": "Font Lineawesome icon package",
+  "detailedDescription": "Font Lineawesome icon package",
+  "type": "code",
+  "resources": [
+    {
+      "path": "${package.dir}/resources",
+      "output": "shared"
+    }
+  ],
+  "framework": "ext",
+  "toolkit": "classic",
+  "theme": "ext-theme-classic",
+  "output": "${framework.dir}/build/packages/${package.name}",
+  "resource": {
+    "paths": ""
+  },
+  "sass": {
+    "namespace": "Font.line.awesome",
+    "etc": "${package.dir}/sass/etc/all.scss",
+    "var": "${package.dir}/sass/var",
+    "src": [
+      "${package.dir}/sass/src",
+      "${package.dir}/sass/src/all.scss"
+    ]
+  },
+  "classpath": "${package.dir}/src",
+  "overrides": "${package.dir}/overrides"
+}
