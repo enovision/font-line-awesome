@@ -1,0 +1,78 @@
+$la-font-path: get-resource-path('fonts', 'shared');
+
+$la-font-name-la: 'Line Awesome Solid';
+$la-font-name-lar: 'Line Awesome Free';
+$la-font-name-las: 'Line Awesome Solid';
+$la-font-name-lab: 'Line Awesome Brands';
+
+$la-css-prefix: la;
+
+@import '../etc/line-awesome';
+
+.#{$la-css-prefix} {
+  font-family: $la-font-name-las;
+  font-weight: 400;
+}
+
+@function la-content($la-var) {
+  @return unquote("\"\\#{ $la-var }\"");
+}
+
+// Ext JS Adjustments
+
+.x-btn-icon-el-default-toolbar-small {
+  &.la,
+  &.las,
+  &.lab,
+  &.lar {
+    font-size: 16px;
+  }
+}
+
+// @formatter:off
+.c-aqua {   color: #00FFFF; }
+.c-black { color: #000; },
+.c-blue { color:  #05479A; }
+.c-crimson { color: #ce3d3d; }
+.c-fuchsia { color: #FF00FF; }
+.c-gold { color: #fae204; }
+.c-gray { color: #808080; }
+.c-grayDark { color: #3D3D3D; }
+.c-green { color: #008000; }
+.c-lime { color: #00FF00; }
+.c-lightSteelBlue { color: #9fc0e9; }
+.c-maroon { color: #800000; }
+.c-navy { color: #000080; }
+.c-olive { color: #808000; }
+.c-orange { color: #FF9900; }
+.c-purple { color: #800080; }
+.c-red { color: #FF0000; }
+.c-sandyBrown { color: #f6e14a; }
+.c-silver { color: #C0C0C0; }
+.c-teal { color: #008080; }
+.c-white { color: #FFF; }
+.c-yellow { color: #fcff40; }
+
+.bc-aqua { background-color: #00FFFF; }
+.bc-black { background-color: #000; },
+.bc-blue { background-color:  #05479A; }
+.bc-crimson { background-color: #ce3d3d; }
+.bc-fuchsia { background-color: #FF00FF; }
+.bc-gold { background-color: #fae204; }
+.bc-gray { background-color: #808080; }
+.bc-grayDark { background-color: #3D3D3D; }
+.bc-green { background-color: #008000; }
+.bc-lime { background-color: #00FF00; }
+.bc-lightSteelBlue { background-color: #9fc0e9; }
+.bc-maroon { background-color: #800000; }
+.bc-navy { background-color: #000080; }
+.bc-olive { background-color: #808000; }
+.bc-orange { background-color: #FF9900; }
+.bc-purple { background-color: #800080; }
+.bc-red { background-color: #FF0000; }
+.bc-sandyBrown { background-color: #f6e14a; }
+.bc-silver { background-color: #C0C0C0; }
+.bc-teal { background-color: #008080; }
+.bc-white { background-color: #FFF; }
+.bc-yellow { background-color: #fcff40; }
+// @formatter:on
