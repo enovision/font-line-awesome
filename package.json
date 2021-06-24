@@ -2,8 +2,11 @@
   "name": "font-line-awesome",
   "namespace": "FontLineAwesome",
   "format": "1",
-  "version": "2.0.0",
+  "version": "2.2.9",
   "compatVersion": "1.0.0",
+  "framework": "ext",
+  "toolkit": "classic",
+  "theme": "ext-theme-classic",
   "creator": "enovision",
   "summary": "Font Lineawesome icon package",
   "detailedDescription": "Font Lineawesome icon package",
@@ -14,10 +17,7 @@
       "output": "shared"
     }
   ],
-  "framework": "ext",
-  "toolkit": "classic",
-  "theme": "ext-theme-classic",
-  "output": "${framework.dir}/build/packages/${package.name}",
+  "output": "${package.dir}/build",
   "resource": {
     "paths": ""
   },
